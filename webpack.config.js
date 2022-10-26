@@ -36,7 +36,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
-        test: /\.m?js$/,
+        test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: "babel-loader",
@@ -66,7 +66,7 @@ module.exports = {
     ],
   },
   optimization: {
-    minimize: true,
+    minimize: process.env.NODE_ENV == "production",
     minimizer: [new HtmlMinimizerPlugin(), new CssMinimizerPlugin()],
   },
   resolve: {
