@@ -4,8 +4,10 @@
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.4"
   },
   "devDependencies": {
     "babel-loader": "^8.2.5",
@@ -26,8 +28,8 @@
     "webpack-dev-server": "^4.11.1"
   },
   "scripts": {
-    "start" : "webpack serve",
-    "build" : "webpack"
+    "start": "webpack serve",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
