@@ -1,0 +1,51 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.jsx",
+        "*.js"
+      ]
+    }
+  ],
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      4
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "react/jsx-uses-vars": "warn",
+    "react/jsx-uses-react": "error",
+    "max-depth": [
+      "error",
+      2
+    ]
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}
