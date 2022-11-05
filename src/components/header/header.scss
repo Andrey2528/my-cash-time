@@ -1,7 +1,27 @@
 .header {
     .container {
         color: black;
-        
+    }
+
+    .navbar {
+        &__row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 35px 40px 0px 40px;
+        }
+
+        &__list{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style: none;
+        }
+
+        &__item{
+            padding: 0px 0px 0px 35px;
+        }
     }
     
 }
